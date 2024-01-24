@@ -5,7 +5,6 @@ import {Test, console2} from "forge-std/Test.sol";
 import {AddressBook} from "src/AddressBook.sol";
 
 contract AddressBookTest is Test {
-
     function setUp() public {}
 
     function test_Fetch() public {
