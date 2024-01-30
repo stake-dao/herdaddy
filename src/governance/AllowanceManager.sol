@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import "./Governance.sol";
 
-abstract contract Allowed is Governance {
+abstract contract AllowanceManager is Governance {
     mapping(address => bool) public allowed;
 
     ////////////////////////////////////////////////////////////////
