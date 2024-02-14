@@ -21,6 +21,8 @@ abstract contract AllowanceManager is Governance {
     /// @notice Error emitted when auth failed
     error NotAuthorized();
 
+    constructor(address _governance) Governance(_governance) {}
+
     ////////////////////////////////////////////////////////////////
     /// --- MODIFIERS
     ///////////////////////////////////////////////////////////////
