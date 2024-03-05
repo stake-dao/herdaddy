@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-pragma solidity 0.8.19;
+pragma solidity ^0.8.19;
 
-import "./Governance.sol";
+import "src/governance/Governance.sol";
 
+/// @title AllowanceManager contract.
 abstract contract AllowanceManager is Governance {
+    /// @notice Mapping of allowed addresses.
     mapping(address => bool) public allowed;
 
     ////////////////////////////////////////////////////////////////
